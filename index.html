@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class-24</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(216, 164, 9);
+        }
+
+        #todo_list {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .todo_item {
+            border: 1px solid black;
+            box-shadow: 1px 1px 10px rgb(57, 75, 7);
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(242, 255, 0, 0.712);
+            text-align: center;
+            border: 3px solid;
+        }
+
+        .text {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+
+        .del_btn {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .edit_btn {
+            background-color: blue;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+
+        .add_todo_btn {
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 13px;
+            margin: 5px;
+            border: 3PX solid;
+        }
+
+        input {
+            padding: 10px 10px;
+            border: none;
+            border-radius: 13px;
+            margin: 5px;
+            font-size: 14px;
+            border: 3PX solid;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+        }
+    </style>
+
+    <script src="app.js" defer></script>
+
+</head>
+
+<body>
+    <div>
+
+        <div class="container">
+            <input id="input_todo" type="text" placeholder="Enter text">
+
+            <button class="add_todo_btn" onclick="addTodo()" id="btn">Add Todo !</button>
+        </div>
+
+        <div id="todo_list">
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
